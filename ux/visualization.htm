@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human-Centred Visualization for Mobile Health Apps</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/utilities.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../css/retrospective/retrospective.css" /> -->
+</head>
+<body id="top">
+    <div class="wrapper">
+        <header>
+            <div class="logo flex-container">
+                <a href="../index.html">I'm Go-Un</a>
+            </div>
+            <nav>
+                <ul class="no-style-list padding-0 flex-container space-around">
+                    <li class="submenu">
+                        <a href="#" class="current">All about UX</a>
+                        <ul class="no-style-list padding-0 no-visible fixed">
+                            <li>
+                                <a href="visualization.htm" class="dropdown">Human-centred visualization</a>
+                            </li>
+                            <li>
+                                <a href="evaluative.htm" class="dropdown">Evaluative research</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="#">Front-end Design</a>
+                        <ul class="no-style-list padding-0 no-visible fixed">
+                            <li>
+                                <a href="../frontend/wireframe.htm" class="dropdown">Digital Prescriptions</a>
+                            </li>
+                            <li>
+                                <a href="../frontend/library.htm" class="dropdown">Design Library</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a href="../user-research.html">My CV</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- <article class="breadcrumbs">
+                <div class="flex-container vertical-center">
+                    <a href="../index.html" class="sm-text sans-serif">Home</a><span class="sm-text sans-serif">&nbsp;>&nbsp;</span><span class="sm-text sans-serif">All about UX</span><span class="sm-text sans-serif">&nbsp;>&nbsp;</span><span class="accent-blue sm-text sans-serif">Human-centred affective visualization for mHealth apps</span>
+                </div>
+            </article> -->
+            <section class="subpage">
+                <nav class="subpage-nav visible">
+                    <ul class="no-style-list padding-0 sans-serif">
+                        <li class="default-font">
+                            <a href="#motivation">Motivation of the study</a>
+                        </li>
+                        <li class="default-font">
+                            <a href="#tasks">Tasks</a>
+                        </li>
+                        <li class="default-font">
+                            <a href="#timeline">Timeline</a>
+                        </li>
+                        <li class="default-font">
+                            <a href="#problem">Problem Statement</a>
+                        </li>
+                        <li class="default-font">
+                            Methodology
+                            <ul class="no-style-list">
+                                <li><a href="#discovery">Design Thinking for Discovery</a></li>
+                                <li><a href="#experiment">Quasi-Experimental Study</a></li>
+                            </ul>
+                        </li>
+                        <li class="default-font">
+                            Research Findings
+                            <ul class="no-style-list">
+                                <li><a href="#insights">Insights from Discovery Study</a></li>
+                                <li><a href="#q-insights">Quantified Insights</a></li>
+                            </ul>
+                        </li>
+                        <li class="default-font">
+                            <a href="#persona">Persona and User Stories</a>
+                        </li>
+                        <li class="default-font">
+                            <a href="#takeaways">Key takeaways</a>
+                        </li>
+                    </ol>
+                </nav>
+                <article class="title-area">
+                    <h1 class="page-title">Human-Centred Visualization in Health Apps</h1>
+                    <p class="page-para margin-bottom-2">Visualization can sustain motivation and enhance engagement for personal health and wellbeing improvement.</p>
+                    <p class="page-para xm-text ">&copy; 2024 by Go-Un Shin is licensed under CC BY-NC-ND 4.0</p>
+
+                </article>
+                
+                <article class="content-area">
+                    <section class="margin-bottom-2">
+                        <h3 class="margin-bottom-0" id="motivation">Motivation of the study</h3>
+                        <p class="sans-serif">To explore how affective visualization with storytelling can enhance the UX of visual information, specifically, in line with motivation and engagement, while demonstrating that such visual information can be designed to benefit users' health in a long term and a society in turn.</p>
+                    </section>
+                    
+                    <section class="second-column margin-bottom-2">
+                        <div class="column-1">
+                            <h3 class="margin-bottom-0" id="tasks">Tasks</h3>
+                            <ul class="sans-serif padding-0">
+                                <li>User Research</li>
+                                <li>Literature Review</li>
+                                <li>Desk Research</li>
+                                <li>Qualitative & Quantitative Analysis</li>
+                                <li>Mid-fidelity UI Design</li>
+                                <li>Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div class="column-2">
+                            <h3 class="margin-bottom-0" id="timeline">Timeline</h3>
+                            <p class="sans-serif">from September 2024 to December 2024</p>
+                        </div>
+                    </section>
+                    
+                    <section class="margin-bottom-6">
+                        <h3 class="margin-0" id="problem">Problem Statement</h3>
+                        <p class="sans-serif">Wearable devices have transformed health monitoring by enabling data-driven decision-making for behavioural changes <cite>[<a href="https://gearedapp.co.uk/the-impact-of-wearable-devices-mobile-apps-on-health-monitoring">Car23</a></cite>, <cite><a href="https://doi.org/https://doi.org/10.1016/b978-0-443-19073-5.00008-2">NSA∗24</a>]</cite>. Despite these benefits, the mHealth industry faces high dropout rates <cite>[<a href="https://www.appsflyer.com/resources/reports/app-uninstall-benchmarks/">App24</a>]</cite>. Mustafa et al. <cite>[<a href="https://doi.org/https://doi.org/10.3390/healthcare10020221">MAD*22</a>]</cite> found that 21% of mHealth users (n=209) retain only the most useful app, while others uninstall due to missing features (19%), boredom and loss of motivation (16%), or difficulty staying engaged for a long period (10%).</p>
+                    </section>
+                        
+                    <section class="margin-bottom-6">
+                        <h3 class="margin-bottom-0" id="methodology">Methodology</h3>
+                        <div class="second-column margin-bottom-2 dotted-line-bottom">
+                            <div class="col-1">
+                                <ul class="ux-graph no-style-list">
+                                    <li><p class="text-center sm-text">Users Need</p></li>
+                                    <li><p class="text-center sm-text">Research Observation</p></li>
+                                    <li><p class="text-center sm-text">Prioritize Insights</p></li>
+                                    <li><p class="text-center sm-text">Brainstorm Concepts</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-2">
+                                <h4 class="h3-heading margin-0" id="discovery">Design Thinking for Discovery</h4>
+                                <p class="sans-serif">Semi-structured Interviews with a five-faceted questionnaire,
+                                    encompassing <br /><br /> 1) General Perception and Preference, <br /> 
+                                    2) Motivation and Inspiration, <br /> 3) Engagement and Interaction,<br /> 
+                                    4) Challenges, and 5) Emotions <br /><br /> and Plutchick's wheel of
+                                    emotions as a self-reporting tool for emotions.</p>
+                                <p class="sans-serif">Thematic analysis using an affinity diagram was
+                                    conducted based on the five-faceted questionnaire.
+                                    Insights were generated using How Might We statements.
+                                    Desk Research including literature reviews also inspired
+                                    me to create a mHealth prototype with affective
+                                    visualizations.</p>  
+                            </div>
+                        </div>
+                        <div class="second-column margin-bottom-2">
+                            <div class="col-1">
+                                <ul class="ux-graph no-style-list">
+                                    <li><p class="text-center sm-text">Hypothesis</p></li>
+                                    <li class="no-border"><p class="text-center sm-text">Experiment</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-2">
+                                <h4 class="h3-heading margin-0" id="experiment">Quasi-Experimental Study</h4>
+                                <p class="sans-serif">For qualitative data, the Dispositional Flow Scale-2 was used
+                                    alongside semi-structured interviews in a within-subject design.
+                                    Reflexive thematic analysis and subtle sentiment analysis were
+                                    conducted.</p>
+                                <p class="sans-serif">For quantitative data, the PANAS scale assessed Positive
+                                    Affects across two visualizations (conventional and affective) using
+                                    a 5-point Likert Scale.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="margin-bottom-6">
+                        <h3 class="margin-bottom-0">Research Findings</h3>
+                        <div>
+                            <h4 class="h3-heading margin-top-0 margin-bottom-2" id="insights">Insights from the Discovery Study</h4>
+                            
+                            <table>
+                                <tr>
+                                    <td scope="row">Insight 1<br /><span>from Discovery study</span></td>
+                                    <td class="sans-serif">Users find that certain types of visualization and health app content are unclear about what the data is for and what it tries to say. This puzzles them, and it could potentially put them off using it depending on the degree of its exposure and presentation to users.</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">How Might We<br /><span>Statement</span></td>
+                                    <td class="sans-serif">How might we solve the usability issue arising from a lack of clarity and less engaging content on mHealth apps?</td>
+                                </tr>
+                            </table>
+                            <dl class="second-column margin-bottom-6 margin-top-2">
+                                <div class="column-1 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 1-1</dt>
+                                    <dd class="margin-0 sans-serif"><abbr>AI</abbr> (Artifical Intelligence) may help analyze performance and physiological data to <mark>increase the learnability of the data</mark>.</dd>
+                                </div>
+                                <div class="column-2 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 1-2</dt>
+                                    <dd class="margin-0 sans-serif"><abbr>AI</abbr> analysis could also be a tool to <mark>enhance engagement and motivation</mark> by leveraging data-driven storytelling.</dd>
+                                </div>
+                            </dl>
+
+                            <table>
+                                <tr>
+                                    <td scope="row">Insight 2<br /><span>from Discovery study</span></td>
+                                    <td class="sans-serif">Participants who use mHealth apps may or may not have goals. Regardless of goals, people use technology with interest and curiosity, hoping that it could benefit them.</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">How Might We<br /><span>Statement</span></td>
+                                    <td class="sans-serif">Regardless of goals, how might we enhance users’ engagement and motivation simultaneously potentially leading to positive behavioural changes?</td>
+                                </tr>
+                            </table>
+                            <dl class="second-column margin-bottom-6 margin-top-2">
+                                <div class="column-1 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 2-1</dt>
+                                    <dd class="margin-0 sans-serif">Providing the pragmatic action that allows users to <mark>set up a short-term health goal</mark> could accomplish this.</dd>
+                                </div>
+                                <div class="column-2 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 2-2</dt>
+                                    <dd class="margin-0 sans-serif"><mark>Effective communication using affective visualization with storytelling and personalization</mark> between <abbr>AI</abbr> and users regarding their goals could enhance engagement and motivation.</dd>
+                                </div>
+                            </dl>
+
+                            <table>
+                                <tr>
+                                    <td scope="row">Insight 3<br /><span>from Discovery study</span></td>
+                                    <td class="sans-serif">Visualization per se may not be an agency to make participants evoke a certain emotion but depending on the results of their performance and visual cues, they feel either positive or negative feelings.</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">How Might We<br /><span>Statement</span></td>
+                                    <td class="sans-serif">How might we increase the degree of arousal that could potentially lead to a deeper level of cognitive processing and inherently, positive behavioural changes?</td>
+                                </tr>
+                            </table>
+                            <dl class="second-column margin-bottom-6 margin-top-2">
+                                <div class="column-1 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 3-1</dt>
+                                    <dd class="margin-0 sans-serif">Rather than visualization presenting the data as is, visualization that facilitates the correlation between their performance/behaviours and physiological changes could allow users to <mark>reflect on their behaviours</mark>.</dd>
+                                </div>
+                                <div class="column-2 background-color">
+                                    <dt class="serif font-heavy">Design Opportunity 3-2</dt>
+                                    <dd class="margin-0 sans-serif">There may be <mark>other outlets to evoke emotions</mark> in the context of mHealth apps. Storytelling and Social Engagement could be key.</dd>
+                                </div>
+                            </dl>
+
+                            <figure class="margin-bottom-6">
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/proto/M7ffX4b3MUz18xXqRzzdof/HCID-Dissertation?page-id=0%3A1&node-id=133-404&viewport=-780%2C352%2C0.4&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+                                <figcaption class="sm-text text-center">Fig 1. A Mid-fidelity prototype was created based on the insights both from user research and desk research</figcaption>
+                            </figure>
+                        </div>
+
+                        <div>
+                            <h4 class="h3-heading margin-bottom-0" id="q-insights">Quantified Insights from the Experimental Study</h4>
+                            <div class="margin-bottom-2">
+                                <dl class="second-column margin-bottom-4">
+                                    <div class="column-1">
+                                        <dt class="serif font-heavy h5 no-lineheight-h5">Confidence<br />Interval</dt>
+                                        <dd class="margin-0"><p class="margin-0 accent-number">90%</p></dd>
+                                    </div>
+                                    <div class="column-2">
+                                        <dt class="serif font-heavy h5 no-lineheight-h5 margin-bottom-2">Objective<br />for the analysis</dt>
+                                        <dd class="margin-0 sans-serif">The quantitative data aimed to examine differences in participants’ emotional responses across the positive emotions in the PANAS scale while interacting with the two different visualizations, conventional visualization and affective visualization.</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                            <figure>
+                                <img src="../imgs/comparison-chart-panas.svg" width="100%" />
+                                <figcaption class="sm-text text-center">Fig 2. Comparison of positive emotions between the two visualizations</figcaption>
+                            </figure>
+                            <div>
+                                <h5 class="margin-top-2 margin-bottom-0">Findings</h5>
+                                <p class="sans-serif">Given the purpose of the study, the mean values between the variables were used for comparison of degrees of positive emotions, and participants tend to feel a higher level of arousal of positive emotions for their apps compared to the prototype.</p>
+                                <p class="sans-serif">The factors that both variables were not in equal conditions and participants were more familiar with their mHealth apps as opposed to the prototype, which participants may have navigated only for several minutes before responding to the survey, cannot be discounted and may have influenced the result.</p>
+                                <p class="sans-serif">Despite this, enthusiastic (M = 3.4, sample SD = 1.13) and attentive (M = 3.6, sample SD = 1.22) gained slightly higher levels of responses compared to their existing apps, enthusiastic (M = 3.3, sample SD = 1.24) and attentive (M = 3.5, sample SD = 1.17).</p>
+                            </div>
+                            <div>
+                                <h5 class="margin-top-2 margin-bottom-0">Summary for quantified insights</h5>
+                                <p class="sans-serif">The comparison of positive emotional responses from the PANAS scales offered a meaningful conclusion, whereby complex visual stimuli and affective stimuli can increase attention and engagement. According to Dmochowski et al. <cite>(<a href="https://doi.org/10.3389/fnhum.2012.00112">2012</a>)</cite>, engagement and attention are often influenced by external stimuli, which can in turn suppress internally oriented mental processes. Both emotionally laden stimuli tend to heighten both attention and engagement.</p>
+                                <p class="sans-serif">This finding is promising for mHealth apps, which have struggled with low retention rates due to user experience issues related to engagement and motivation. Affective visualizations, therefore, could play a significant role in overcoming these challenges by creating a more personalized and resonant experience that keeps users more engaged and motivated.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="margin-bottom-6">
+                        <h3 class="margin-0" id="persona">Persona and User Stories</h3>
+                        <div>
+                            <h4 class="h3-heading margin-top-0" id="discovery-obj">Building Empathy even for Study Participants</h4>
+                            <p class="sans-serif">
+                                The interview during the pilot study of experimental research was challenging for me as a novice UX researcher. The participant struggled to articulate his thoughts due to unfamiliarity with the prototype, which led to a lengthy two-hour interview.
+                            </p>
+
+                            <div class="flex-container horizontal-center">
+                                <blockquote>
+                                    <q>I just check numbers on tables after my physical activities and that's supposed to do on my app.</q>
+                                    <p><cite>- Pilot study participant</cite></p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="second-column margin-top-2 margin-bottom-4">
+                            <div class="column-1">
+                                <figure class="margin-0">
+                                    <a href="https://drive.google.com/file/d/1UTT_7H_Po4oLZjNMzjgOMqWQUQLO_qTK/view?usp=sharing" target="_blank"><img src="../imgs/Dissertation-FemalePersona.jpg" width="100%" /></a> 
+                                    <figcaption class="sm-text text-center">Fig 3. Female Persona, Alex Cook as a fictional user for the prototype</figcaption>
+                                </figure>
+                            </div>
+                            <div class="column-2">
+                                <figure class="margin-0">
+                                    <a href="https://drive.google.com/file/d/1XgRFWOhQbg_n3ELGtx_4pp_FeFLuwx_b/view?usp=sharing" target="_blank"><img src="../imgs/Dissertation-MalePersona.jpg" width="100%" /></a>
+                                    <figcaption class="sm-text text-center">Fig 4. Male Persona, Alex Cook as a fictional user for the prototype</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="sans-serif">
+                                Since the participant had already built strong mental models of his mHealth app and was confident in how he used it and what information it delivered, he seemed to be content with the way it works. At the same time, it was apparent that he was struggling to understand or articulate his thoughts and feelings about the prototype due to unfamiliarity and (somewhat) complexity.
+                            </p>
+                            <p class="sans-serif">
+                                The pilot study taught me that even interview participants could face challenges due to limited information or understanding of the not-fully-functional prototype and their heuristics. In particular, if they are satisfied with the current apps, the comparative study between their apps and the prototype could be even more challenging to collect the unbiased data. 
+                            </p>
+                            <div class="margin-top-4 margin-bottom-4 flex-container horizontal-center">
+                                <figure class="margin-0">
+                                    <img src="../imgs/userstory-05.png" width="100%" />
+                                    <img src="../imgs/userstory-07.png" width="100%" />
+                                    <img src="../imgs/userstory-08.png" width="100%" />
+                                    <figcaption class="sm-text text-center">Fig 5. User Story Excerptions</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="margin-bottom-6">
+                        <h3 class="margin-bottom-0" id="takeaways">Key takeaways from the research</h3>
+                        <ul class="no-style-list padding-0">
+                            <li class="margin-bottom-2">
+                                <h4 class="h3-heading margin-0">Goal-Driven Design</h4>
+                                <ul class="padding-0 sans-serif">
+                                    <li class="margin-bottom-1"><em>External Representation of Health Goals <cite>[<a href="https://doi.org/https://doi.org/10.1007/s00146-010-0272-8">Kir10</a>]</cite></em>: Goal-driven pragmatic actions that can build mental images towards
+                                        goals. This can be achieved by providing unambiguous feedback, actionable insights, goal-setting flexibility and intuitive design.</li>
+                                    <li class="margin-bottom-1"><em>Leveraging Epistemic Emotions through Visualizations</em>: Presenting actionable insights with visual complexity (when appropriate) can promote reevaluation of outcomes and improve user experience <cite>[<a href="https://doi.org/https://doi.org/10.1016/j.learninstruc.2022.101628">TRH*22</a>]</cite>.</li>
+                                    <li class="margin-bottom-1"><em>Encouraging Deep Information Processing</em>: Deep information processing can increase memory recall and engagement, whereby meaningful cognitive processing occurs <cite>[<a href="https://doi.org/https://doi.org/10.1037/0022-0663.83.2.187">GG91</a>]</cite>.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4 class="h3-heading margin-0 ">Textual Information for Clarity</h4>
+                                <p class="margin-top-0 sans-serif">Although visualizations may present literacy challenges, users often overcome them through repeated exposure when they find the information useful. High dropout rates may instead stem from engagement issues caused by predictable data patterns from routine and unclear actionable insights. An AI-driven design approach is therefore recommended, as outlined below.</p>
+                                <ul class="padding-0 sans-serif">
+                                    <li class="margin-bottom-1"><em>AI-Driven Personalization</em>: AI provides insights not easily perceived through visualization, leading to positive emotional responses.</li>
+                                    <li class="margin-bottom-1"><em>Leveraging Epistemic Emotions through Textual Information</em>: AI serves as a cognitive offloading tool when mental contrasting becomes a barrier to goal pursuit. Put simply, desired
+                                        future outcomes and potential barriers can be externalized through feedback, allowing users to make informed decisions.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h6>Good Design is beyond what you see on the surface.</h6>
+                <p class="sans-serif"><a href="mailto:emilieshin@gmail.com">emilieshin@gmail.com</a></p>
+                <p>
+                    <a href="https://www.linkedin.com/in/goun-shin" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                    </a>
+                </p>
+                <p class="sm-text sans-serif">&copy; Designed and built by Go-Un</p>
+            </section>
+            <section>
+                
+            </section>
+            <section>
+            </section>
+        </footer>
+        <div class="top-btn no-visible">
+            <a href="#top" class="sans-serif">
+                <span>Go to top</span>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#e8c547" d="M46.8,-44.1C58.6,-35,64.7,-17.5,62.1,-2.5C59.6,12.4,48.4,24.8,36.6,41.4C24.8,58,12.4,78.7,-4.6,83.4C-21.7,88,-43.3,76.5,-58.8,59.9C-74.4,43.3,-83.7,21.7,-82.6,1.1C-81.4,-19.4,-69.8,-38.8,-54.3,-47.9C-38.8,-57.1,-19.4,-56.1,-1,-55.1C17.5,-54.2,35,-53.3,46.8,-44.1Z" transform="translate(100 100)" />
+            </svg>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/menu.js"></script>
+</body>
+</html>

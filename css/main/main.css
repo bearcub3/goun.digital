@@ -1,0 +1,27 @@
+/* Hero section */
+
+h6 {
+    color: #4d5061;
+}
+
+.main-text {
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    font-style: normal;
+}
+
+@media screen and (min-width: 350px) {
+    main {
+        height: fit-content;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* Hero section */
+    main {
+        height: calc(100vh - 180px);
+    }
+}
+
+/* Footer */

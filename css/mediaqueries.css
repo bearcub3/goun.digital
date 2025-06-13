@@ -1,0 +1,26 @@
+/* Small screen */
+@media (min-width: 300px) {
+    /* Common */
+    .main-nav {
+        flex: auto;
+        justify-content: center;
+    }
+}
+
+/* Medium screen */
+@media (min-width: 768px) {
+    /* Common */
+}
+
+/* Large screen */
+@media (min-width: 992px) {
+    /* Common */
+    .main-nav {
+        justify-content: flex-end;
+    }
+}
+
+/* X-large screen */
+@media (min-width: 1200px) {
+    /* Hero section */
+}

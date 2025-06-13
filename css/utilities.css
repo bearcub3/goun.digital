@@ -1,0 +1,240 @@
+/* Utilitity classes */
+.flex-container {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.no-style-list {
+    list-style: none;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.accent-blue {
+    color: #0e34a0;
+}
+
+.serif {
+    font-family: "Zilla Slab", serif;
+}
+
+.sans-serif {
+    font-family: "Rethink Sans", sans-serif;
+}
+
+.crossline {
+    text-decoration: underline wavy #0e34a0;
+    text-underline-position: right under;
+}
+
+abbr {
+    font-variant: small-caps;
+    font-weight: 700;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.accent-number {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #C37D92;
+}
+
+.no-lineheight-h5 {
+    line-height: 1.4rem;
+}
+
+h1, .h1 {
+    font-size: 2.986rem;
+    font-weight: 700;
+    line-height: 1.6;
+    font-style: normal;
+    text-align: center;
+}
+
+h2, .h2 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.488rem;
+}
+
+h3, .h3 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.h3-heading {
+    color: #324a5f;
+}
+
+h4, .h4 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+h5, .h5 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.4rem;
+}
+
+h6, .h6 {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.sm-text {
+    font-size: 0.833rem;
+    font-weight: 400;
+}
+
+.xm-text {
+    font-size: 0.694rem;
+    font-weight: 400;
+}
+
+p,
+.default-font {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-light {
+    font-weight: 400;
+}
+
+.font-heavy {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 50, 61);
+}
+
+a:hover, a:focus {
+    text-decoration: underline 3px;
+    color: #0e34a0;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.margin-0 {
+    margin: 0;
+}
+
+.margin-left-0 {
+    margin-left: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
+
+.margin-bottom-1 {
+    margin-bottom: 1rem;;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;;
+}
+
+.margin-top-4 {
+    margin-top: 4rem;
+}
+
+.margin-bottom-4 {
+    margin-bottom: 4rem;;
+}
+
+.margin-bottom-6 {
+    margin-bottom: 6rem;;
+}
+
+.no-visible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.no-background {
+    background-color: none!;
+}
+
+.z-index-top {
+    z-index: 99999;
+}
+
+.dotted-line-bottom {
+    border-bottom: 1px dashed #001f54;
+}
+
+/* colours */
+.yellow {
+    color: #ffd23f;
+    background-color: #001f54;
+}
+
+small {
+    display:inline-block;
+    font-size: .8rem;
+    margin: 10px 30px;
+}
