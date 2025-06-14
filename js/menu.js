@@ -11,7 +11,7 @@
             const menus = doc.querySelectorAll('.submenu > a');
 
             // Main section position alignment
-            const main = doc.querySelector('main');
+            //const main = doc.querySelector('main');
             const header = doc.querySelector('header');
 
             menus.forEach((menu, i) => {
@@ -27,7 +27,7 @@
 
                     // Main section position alignment depending on the menu height
                     let headerHeight = header.offsetHeight;
-                    main.style.marginTop = `${headerHeight}px`;
+                    //main.style.marginTop = `${headerHeight}px`;
                     
                 });
             })
