@@ -11,8 +11,39 @@
             const menus = doc.querySelectorAll('.submenu > a');
 
             // Main section position alignment
-            //const main = doc.querySelector('main');
+            const main = doc.querySelector('main');
             const header = doc.querySelector('header');
+
+            menus.forEach((menu, i) => {
+                menu.addEventListener('click', (e) => {
+                    //e.preventDefault();
+
+                    const submenu = menu.nextElementSibling;
+
+                    if (submenu && submenu.classList.contains('no-visible')){
+                        submenu.classList.remove('no-visible');
+                        submenu.classList.add('visible');
+                    }
+
+                    // Main section position alignment depending on the menu height
+                    // let headerHeight = header.offsetHeight;
+                    // main.style.marginTop = `${headerHeight}px`;
+                    
+                });
+            })
+
+            menus.forEach((menu, i) => {
+                menu.addEventListener('focus', (e) => {
+                    //e.preventDefault();
+
+                    const submenu = menu.nextElementSibling;
+
+                    if (submenu && submenu.classList.contains('no-visible')){
+                        submenu.classList.remove('no-visible');
+                        submenu.classList.add('visible');
+                    }
+                });
+            })
 
             // when the logo is in the focus state
             const logo = doc.querySelector('.logo a');
@@ -26,6 +57,10 @@
                     firstMenu.classList.remove('visible');
                     firstMenu.classList.add('no-visible');
                 }
+
+                // Main section position alignment depending on the menu height
+                let headerHeight = header.offsetHeight;
+                main.style.marginTop = `${headerHeight}px`;
             })
 
             logo.addEventListener('focus', (e) => { 
@@ -51,8 +86,6 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
-                        console.log(parent);
-                        
                     }
                 })
             })
@@ -66,8 +99,6 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
-                        console.log(parent);
-                        
                     }
                 })
             })
@@ -115,6 +146,10 @@
 
             win.addEventListener('resize', (e) => {
                 let width = win.innerWidth;
+                //let headerHeight = header.offsetHeight;
+
+                // Main section position alignment depending on the menu height
+                main.style.marginTop = `${headerHeight}px`;
 
                 if(width < 992){
                     nav.classList.add('column');
@@ -140,6 +175,10 @@
 
             win.addEventListener('load', (e) => {
                 let width = win.innerWidth;
+                //let headerHeight = header.offsetHeight;
+
+                // Main section position alignment depending on the menu height
+                main.style.marginTop = `${headerHeight}px`;
 
                 if (width < 992) {
                     nav.classList.add('column');
@@ -151,7 +190,6 @@
                     nav.classList.remove('column');
 
                     // subpage layout changes
-                     // subpage layout changes
                     if(subnav && subnav.classList.contains('no-visible')){
                         subnav.classList.remove('no-visible');
                         subnav.classList.add('visible')
