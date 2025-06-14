@@ -39,7 +39,7 @@
             links.forEach((el, i) => {
                 // innerText will change when mouseover
                 el.addEventListener('mouseover', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     if (i === 0){
                         el.textContent = `Retrospective Design`;
                     } else if (i === 1){
@@ -51,7 +51,7 @@
                 });
 
                 el.addEventListener('mouseout', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     if (i === 0){
                         el.textContent = `I already have a website.`;
                     } else if (i === 1){
