@@ -62,10 +62,6 @@
                     firstMenu.classList.remove('visible');
                     firstMenu.classList.add('no-visible');
                 }
-
-                // Main section position alignment depending on the menu height
-                let headerHeight = header.offsetHeight;
-                main.style.marginTop = `${headerHeight}px`;
             })
 
             logo.addEventListener('focus', (e) => { 
@@ -77,10 +73,6 @@
                     firstMenu.classList.remove('visible');
                     firstMenu.classList.add('no-visible');
                 }
-
-                // Main section position alignment depending on the menu height
-                let headerHeight = header.offsetHeight;
-                main.style.marginTop = `${headerHeight}px`;
             })
 
             // dropdown menu
@@ -95,13 +87,7 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
-                        console.log(parent);
-                        
                     }
-
-                    // Main section position alignment depending on the menu height
-                    let headerHeight = header.offsetHeight;
-                    main.style.marginTop = `${headerHeight}px`;
                 })
             })
 
@@ -114,13 +100,8 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
-                        console.log(parent);
                         
                     }
-
-                    // Main section position alignment depending on the menu height
-                    let headerHeight = header.offsetHeight;
-                    main.style.marginTop = `${headerHeight}px`;
                 })
             })
 
@@ -133,10 +114,6 @@
                         parent.classList.remove('visible');
                         parent.classList.add('no-visible');
                     }
-
-                    // Main section position alignment depending on the menu height
-                    let headerHeight = header.offsetHeight;
-                    main.style.marginTop = `${headerHeight}px`;
                 })  
             })
 
@@ -149,10 +126,6 @@
                         parent.classList.remove('visible');
                         parent.classList.add('no-visible');
                     }
-
-                    // Main section position alignment depending on the menu height
-                    let headerHeight = header.offsetHeight;
-                    main.style.marginTop = `${headerHeight}px`;
                 })  
             })
         },
@@ -175,10 +148,6 @@
 
             win.addEventListener('resize', (e) => {
                 let width = win.innerWidth;
-                //let headerHeight = header.offsetHeight;
-
-                // Main section position alignment depending on the menu height
-                main.style.marginTop = `${headerHeight}px`;
 
                 if(width < 992){
                     nav.classList.add('column');
@@ -212,10 +181,6 @@
 
             win.addEventListener('load', (e) => {
                 let width = win.innerWidth;
-                //let headerHeight = header.offsetHeight;
-
-                // Main section position alignment depending on the menu height
-                main.style.marginTop = `${headerHeight}px`;
 
                 if (width < 992) {
                     nav.classList.add('column');
