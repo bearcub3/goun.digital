@@ -219,9 +219,14 @@
                     nav.classList.remove('column');
 
                     // subpage layout changes
-                    if(!!subnav){
-                        subnav.classList.contains('no-visible')? subnav.classList.remove('no-visible') : subnav.classList.add('visible');
-
+                    if (subnav) {
+                        if (subnav.classList.contains('no-visible')) {
+                            subnav.classList.remove('no-visible');
+                            subnav.classList.add('visible');
+                        } else {
+                            subnav.classList.remove('visible');
+                            subnav.classList.add('no-visible');
+                        }
                     }
                 }
             });
