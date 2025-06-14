@@ -13,10 +13,9 @@
                 let width = win.innerWidth;
 
                 if (width < 992) {
-                    console.log(path);
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 11%; background-position-x: 160%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 13%; background-position-x: 160%;`) : wrapper.setAttribute("style", '');
                 } else if( width >= 992) {
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 10%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 15%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
                 }
             });
 
@@ -24,10 +23,9 @@
                 let width = win.innerWidth;
 
                 if (width < 992) {
-                    console.log(path);
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 11%; background-position-x: 160%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 13%; background-position-x: 160%;`) : wrapper.setAttribute("style", '');
                 } else if( width >= 992) {
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 10%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 15%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
                 }
             });
 
