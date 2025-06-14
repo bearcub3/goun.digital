@@ -42,6 +42,11 @@
                         submenu.classList.remove('no-visible');
                         submenu.classList.add('visible');
                     }
+
+                    // Main section position alignment depending on the menu height
+                    // let headerHeight = header.offsetHeight;
+                    // main.style.marginTop = `${headerHeight}px`;
+                    
                 });
             })
 
@@ -72,6 +77,10 @@
                     firstMenu.classList.remove('visible');
                     firstMenu.classList.add('no-visible');
                 }
+
+                // Main section position alignment depending on the menu height
+                let headerHeight = header.offsetHeight;
+                main.style.marginTop = `${headerHeight}px`;
             })
 
             // dropdown menu
@@ -86,7 +95,13 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
+                        console.log(parent);
+                        
                     }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
                 })
             })
 
@@ -99,7 +114,13 @@
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
+                        console.log(parent);
+                        
                     }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
                 })
             })
 
@@ -112,6 +133,10 @@
                         parent.classList.remove('visible');
                         parent.classList.add('no-visible');
                     }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
                 })  
             })
 
@@ -124,6 +149,10 @@
                         parent.classList.remove('visible');
                         parent.classList.add('no-visible');
                     }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
                 })  
             })
         },
@@ -164,12 +193,20 @@
 
                     // subnav.classList.contains('visible')? subnav.classList.remove('visible') : 
 
+                    // subpage layout changes
+                    if(subnav && subnav.classList.contains('visible')){
+                        subnav.classList.add('no-visible');
+                        subnav.classList.remove('visible');
+                    }
+
                 } else if( width >= 992){
                     nav.classList.remove('column');
 
                     // subpage layout changes
-                    subnav.classList.contains('no-visible')? subnav.classList.remove('no-visible') : subnav.classList.add('visible');
-
+                    if(subnav && subnav.classList.contains('no-visible')){
+                        subnav.classList.remove('no-visible');
+                        subnav.classList.add('visible')
+                    }
                 }
             })
 
@@ -184,7 +221,10 @@
                     nav.classList.add('column');
 
                     // subpage layout changes
-                    subnav.classList.contains('visible')? subnav.classList.remove('visible') : subnav.classList.add('no-visible');
+                    if(subnav && subnav.classList.contains('visible')){
+                        subnav.classList.add('no-visible');
+                        subnav.classList.remove('visible');
+                    }
 
                 } else if( width >= 992) {
                     nav.classList.remove('column');
