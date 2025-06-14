@@ -16,7 +16,7 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('click', (e) => {
-                    //e.preventDefault();
+                    e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
@@ -34,7 +34,7 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('focus', (e) => {
-                    //e.preventDefault();
+                    e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
