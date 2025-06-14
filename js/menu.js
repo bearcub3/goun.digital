@@ -26,7 +26,7 @@
                     }
 
                     // Main section position alignment depending on the menu height
-                    let headerHeight = header.offsetHeight;
+                    //let headerHeight = header.offsetHeight;
                     //main.style.marginTop = `${headerHeight}px`;
                     
                 });
