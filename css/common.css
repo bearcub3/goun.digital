@@ -16,12 +16,13 @@ body {
 .logo {
     margin: 0 25px;
     position: absolute;
-    top: 18px;
+
 }
 
 .logo > a {
     font-size: 1.5rem;
     font-weight: 600;
+    margin-top: 27px;
 }
 
 nav > ul > li {
@@ -149,6 +150,10 @@ cite > a {
 
 .footnote {
     font-size: .7rem;
+    margin: 0;
+}
+
+sup small {
     margin: 0;
 }
 
