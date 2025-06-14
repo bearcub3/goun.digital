@@ -15,6 +15,24 @@
             const header = doc.querySelector('header');
 
             menus.forEach((menu, i) => {
+                menu.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const submenu = menu.nextElementSibling;
+
+                    if (submenu && submenu.classList.contains('no-visible')){
+                        submenu.classList.remove('no-visible');
+                        submenu.classList.add('visible');
+                    }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
+                    
+                });
+            })
+
+            menus.forEach((menu, i) => {
                 menu.addEventListener('focus', (e) => {
                     e.preventDefault();
 
@@ -35,6 +53,21 @@
             // when the logo is in the focus state
             const logo = doc.querySelector('.logo a');
 
+            logo.addEventListener('click', (e) => { 
+                e.preventDefault();
+
+                const firstMenu = doc.querySelector('.submenu:first-child ul');
+
+                if (firstMenu && firstMenu.classList.contains('visible')){
+                    firstMenu.classList.remove('visible');
+                    firstMenu.classList.add('no-visible');
+                }
+
+                // Main section position alignment depending on the menu height
+                let headerHeight = header.offsetHeight;
+                main.style.marginTop = `${headerHeight}px`;
+            })
+
             logo.addEventListener('focus', (e) => { 
                 e.preventDefault();
 
@@ -54,6 +87,25 @@
             const dropdowns = doc.querySelectorAll('.dropdown');
 
             dropdowns.forEach((el, i) => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const parent = el.parentElement.parentElement;
+
+                    if(parent && parent.classList.contains('no-visible')){
+                        parent.classList.remove('no-visible');
+                        parent.classList.add('visible');
+                        parent.classList.add('selected');
+                        console.log(parent);
+                        
+                    }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
+                })
+            })
+
+            dropdowns.forEach((el, i) => {
                 el.addEventListener('focus', (e) => {
                     e.preventDefault();
                     const parent = el.parentElement.parentElement;
@@ -70,6 +122,22 @@
                     let headerHeight = header.offsetHeight;
                     main.style.marginTop = `${headerHeight}px`;
                 })
+            })
+
+            dropdowns.forEach((el, i) => {
+                el.addEventListener('blur', (e) => {
+                    e.preventDefault();
+                    const parent = el.parentElement.parentElement;
+
+                    if(i === 3 && parent.classList.contains('visible')){
+                        parent.classList.remove('visible');
+                        parent.classList.add('no-visible');
+                    }
+
+                    // Main section position alignment depending on the menu height
+                    let headerHeight = header.offsetHeight;
+                    main.style.marginTop = `${headerHeight}px`;
+                })  
             })
 
             dropdowns.forEach((el, i) => {
