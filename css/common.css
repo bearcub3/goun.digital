@@ -35,7 +35,7 @@ ul > li:last-child {
 }
 
 .submenu {
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .submenu li {
