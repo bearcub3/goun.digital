@@ -27,8 +27,8 @@ header {
     grid-row: 1;
     display: grid;
     gap: 25px;
-    position: fixed;
-    z-index: 999999;
+/*     position: fixed;
+    z-index: 999999; */
 }
 
 nav ul > li {
