@@ -2,7 +2,6 @@
     const website = {
         init : function () {
             this.goToTop();
-            this.textTransition();
             this.screenSizeDetector();
             this.location();
         },
@@ -32,36 +31,6 @@
                 }
             });
 
-        },
-        textTransition : function () {
-            const links = doc.querySelectorAll('.option-link');
-
-            links.forEach((el, i) => {
-                // innerText will change when mouseover
-                el.addEventListener('mouseover', (e) => {
-                    //e.preventDefault();
-                    if (i === 0){
-                        el.textContent = `Retrospective Design`;
-                    } else if (i === 1){
-                        el.textContent = `Progressive Design`;
-                    } else {
-                        el.textContent = `User Research`;
-                    }
-                    
-                });
-
-                el.addEventListener('mouseout', (e) => {
-                    //e.preventDefault();
-                    if (i === 0){
-                        el.textContent = `I already have a website.`;
-                    } else if (i === 1){
-                        el.textContent = `I don't have a website.`;
-                    } else {
-                        el.textContent = `What the heck is accessibility?`;
-                    }
-                    
-                });
-            });
         },
         goToTop: function() {
             const top = doc.querySelector('.top-btn');
