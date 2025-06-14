@@ -16,7 +16,7 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('click', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
@@ -34,7 +34,7 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('focus', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
@@ -54,7 +54,7 @@
             const logo = doc.querySelector('.logo a');
 
             logo.addEventListener('click', (e) => { 
-                e.preventDefault();
+                //e.preventDefault();
 
                 const firstMenu = doc.querySelector('.submenu:first-child ul');
 
@@ -69,7 +69,7 @@
             })
 
             logo.addEventListener('focus', (e) => { 
-                e.preventDefault();
+                //e.preventDefault();
 
                 const firstMenu = doc.querySelector('.submenu:first-child ul');
 
@@ -88,7 +88,7 @@
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('click', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     const parent = el.parentElement.parentElement;
 
                     if(parent && parent.classList.contains('no-visible')){
@@ -107,7 +107,7 @@
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('focus', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     const parent = el.parentElement.parentElement;
 
                     if(parent && parent.classList.contains('no-visible')){
@@ -126,7 +126,7 @@
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('blur', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     const parent = el.parentElement.parentElement;
 
                     if(i === 3 && parent.classList.contains('visible')){
@@ -142,7 +142,7 @@
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('focusout', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
                     const parent = el.parentElement.parentElement;
 
                     if(i === 3 && parent.classList.contains('visible')){
@@ -219,6 +219,10 @@
                     nav.classList.remove('column');
 
                     // subpage layout changes
+                    // if(!!subnav){
+                    //     subnav.classList.contains('no-visible')? subnav.classList.remove('no-visible') : subnav.classList.add('visible');
+
+                    // }
                     if (subnav) {
                         if (subnav.classList.contains('no-visible')) {
                             subnav.classList.remove('no-visible');
