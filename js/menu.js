@@ -133,7 +133,6 @@
                         parent.classList.remove('visible');
                         parent.classList.add('no-visible');
                     }
-
                     // Main section position alignment depending on the menu height
                     let headerHeight = header.offsetHeight;
                     main.style.marginTop = `${headerHeight}px`;
