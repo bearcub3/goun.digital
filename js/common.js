@@ -85,16 +85,11 @@
             const columns = doc.querySelectorAll('.col-1');
             const methodologySection = doc.querySelectorAll('#methodology ~ *');
 
-            // subpage navigation
-            const subnav = doc.querySelector('.subpage-nav');
-
 
             win.addEventListener('load', (e) => {
                 let width = win.innerWidth;
 
                 if (width < 992) {
-                    subnav.classList.add('no-visible');
-
                     columns.forEach((col) => {
                         col.classList.add('no-visible');
                     });
@@ -104,9 +99,6 @@
                     });
 
                 } else if( width >= 992) {
-                    subnav.classList.remove('no-visible');
-                    subnav.classList.add('visible');
-
                     nav.classList.remove('column');
                     columns.forEach((col) => {
                         col.classList.add('visible');
@@ -119,7 +111,6 @@
                 let width = win.innerWidth;
 
                 if(width < 992){
-                    subnav.classList.add('no-visible');
                     nav.classList.add('column');
                     columns.forEach((col) => {
                         col.classList.remove('visible');
@@ -130,10 +121,7 @@
                         col.classList.remove('second-column');
                     });
                     
-                } else if( width >= 992){
-                    subnav.classList.remove('no-visible');
-                    subnav.classList.add('visible');
-                    
+                } else if( width >= 992){              
                     nav.classList.remove('column');
                     columns.forEach((col) => {
                         col.classList.remove('no-visible');
