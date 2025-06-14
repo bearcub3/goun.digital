@@ -14,42 +14,6 @@
             //const main = doc.querySelector('main');
             const header = doc.querySelector('header');
 
-            menus.forEach((menu, i) => {
-                menu.addEventListener('click', (e) => {
-                    //e.preventDefault();
-
-                    const submenu = menu.nextElementSibling;
-
-                    if (submenu && submenu.classList.contains('no-visible')){
-                        submenu.classList.remove('no-visible');
-                        submenu.classList.add('visible');
-                    }
-
-                    // Main section position alignment depending on the menu height
-                    //let headerHeight = header.offsetHeight;
-                    //main.style.marginTop = `${headerHeight}px`;
-                    
-                });
-            })
-
-            menus.forEach((menu, i) => {
-                menu.addEventListener('focus', (e) => {
-                    //e.preventDefault();
-
-                    const submenu = menu.nextElementSibling;
-
-                    if (submenu && submenu.classList.contains('no-visible')){
-                        submenu.classList.remove('no-visible');
-                        submenu.classList.add('visible');
-                    }
-
-                    // Main section position alignment depending on the menu height
-                    //let headerHeight = header.offsetHeight;
-                    //main.style.marginTop = `${headerHeight}px`;
-                    
-                });
-            })
-
             // when the logo is in the focus state
             const logo = doc.querySelector('.logo a');
 
