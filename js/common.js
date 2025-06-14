@@ -13,7 +13,7 @@
                 let width = win.innerWidth;
 
                 if (width < 992) {
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 16%; background-position-x: 180%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 16%; background-position-x: 110%;`) : wrapper.setAttribute("style", '');
                 } else if( width >= 992) {
                     path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 18%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
                 }
@@ -23,7 +23,7 @@
                 let width = win.innerWidth;
 
                 if (width < 992) {
-                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 16%; background-position-x: 180%;`) : wrapper.setAttribute("style", '');
+                    path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 16%; background-position-x: 110%;`) : wrapper.setAttribute("style", '');
                 } else if( width >= 992) {
                     path === '/ux/visualization.htm'?  wrapper.setAttribute("style", `background: no-repeat url("../imgs/Plutchik-wheel.png"); background-position-y: 18%; background-position-x: 120%;`) : wrapper.setAttribute("style", '');
                 }
