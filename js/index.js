@@ -5,7 +5,7 @@
         },
         indexPage: function() {
             // Hero section realignment
-            const hero = doc.querySelector('.hero').firstElementChild;
+            //const hero = doc.querySelector('.hero').firstElementChild;
 
             win.addEventListener('resize', (e) => {
                 let width = win.innerWidth;
