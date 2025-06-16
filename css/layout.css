@@ -8,6 +8,10 @@ body {
     color: #30323D;
     margin: 0;
     padding: 0;
+    background-image: radial-gradient(#011638 1px, transparent 0px);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    background-position: center;
 }
 
 .wrapper {
