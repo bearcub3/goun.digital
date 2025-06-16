@@ -11,16 +11,57 @@ h6 {
     font-style: normal;
 }
 
+.keyword-main {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyword-main:first-child{
+    background-color: #011638;
+    color: #dfdfdf;
+}
+
+.keyword-main:nth-child(2) {
+    background-color: #0D21A1;
+    color: #dfdfdf;
+    border-radius: 50%;
+}
+
+.keyword-main:last-child {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #EEC643;
+    position: relative;
+}
+
+.keyword-main:last-child > span {
+    position: absolute;
+    top: 70px;
+}
+
 @media screen and (min-width: 350px) {
     main {
         height: fit-content;
+    }
+
+    main > div {
+        padding: 0 25px 0 0;
     }
 }
 
 @media screen and (min-width: 992px) {
     /* Hero section */
-    main {
+    /* main {
         height: calc(100vh - 180px);
+    } */
+
+    main > div {
+        padding: 0;
     }
 }
 
