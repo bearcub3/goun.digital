@@ -5,6 +5,7 @@
             this.screenSizeDetector();
             this.location();
             this.tooManyIframes();
+            this.tooSmallScreen();
         },
         location : function(){
             const path = win.location.pathname;
@@ -179,6 +180,28 @@
                     responsive.insertBefore(responsiveLink, figcaption3);
                 }
             }
+        },
+        tooSmallScreen: function(){
+            const screenHeight = win.screen.height;
+            
+            if(screenHeight <= 800){
+                win.addEventListener('scroll', () => {
+                    const scrollTop = win.scrollY;
+                    const viewportHeight = win.innerHeight;
+                    const documentHeight = document.documentElement.scrollHeight;
+                  
+                    if (scrollTop + viewportHeight >= documentHeight - 250) {
+                        const subNav = doc.querySelector('.subpage-nav');
+                        subNav.classList.remove('visible');
+                        subNav.classList.add('no-visible');
+                    } else if (scrollTop + viewportHeight < documentHeight) {
+                        const subNav = doc.querySelector('.subpage-nav');
+                        subNav.classList.remove('no-visible');
+                        subNav.classList.add('visible');
+                    }
+                  });
+            }
+            
         }
     }
     website.init();
