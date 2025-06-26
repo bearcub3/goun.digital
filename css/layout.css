@@ -202,7 +202,7 @@ dl > div.background-color {
     display: inline-block;
     width: 100%;
     /* border: 1px solid rgba(13, 33, 161, 1); */
-    background-color: rgba(13, 33, 161, 1);
+    background-color: #011638;
     color: #dfdfdf;
     border-radius: 0;
     padding: 1.2rem;
