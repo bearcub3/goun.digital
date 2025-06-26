@@ -10,10 +10,6 @@
             // submenu dropdown
             const menus = doc.querySelectorAll('.submenu > a');
 
-            // Main section position alignment
-            const main = doc.querySelector('main');
-            const header = doc.querySelector('header');
-
             menus.forEach((menu, i) => {
                 menu.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -24,10 +20,6 @@
                         submenu.classList.remove('no-visible');
                         submenu.classList.add('visible');
                     }
-
-                    // Main section position alignment depending on the menu height
-                    // let headerHeight = header.offsetHeight;
-                    // main.style.marginTop = `${headerHeight}px`;
                     
                 });
             })
@@ -41,12 +33,7 @@
                     if (submenu && submenu.classList.contains('no-visible')){
                         submenu.classList.remove('no-visible');
                         submenu.classList.add('visible');
-                    }
-
-                    // Main section position alignment depending on the menu height
-                    // let headerHeight = header.offsetHeight;
-                    // main.style.marginTop = `${headerHeight}px`;
-                    
+                    }                   
                 });
             })
 
@@ -73,7 +60,7 @@
                     firstMenu.classList.remove('visible');
                     firstMenu.classList.add('no-visible');
                 }
-            })
+            });
 
             // dropdown menu
             const dropdowns = doc.querySelectorAll('.dropdown');
@@ -89,7 +76,7 @@
                         parent.classList.add('selected');
                     }
                 })
-            })
+            });
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('focus', (e) => {
@@ -103,7 +90,7 @@
                         
                     }
                 })
-            })
+            });
 
             dropdowns.forEach((el, i) => {
                 el.addEventListener('blur', (e) => {
@@ -133,11 +120,6 @@
         screenSizeDetector: function() {
             // Main navigation realignment
             const nav = doc.querySelector('nav > ul');
-            const submenu = nav.nextElementSibling;
-
-            // Main section position alignment
-            const main = doc.querySelector('main');
-            const header = doc.querySelector('header');
 
             // Sub page navigation
             const subnav = doc.querySelector('.subpage-nav');
@@ -147,17 +129,13 @@
 
                 if(width < 992){
                     nav.classList.add('column');
-                    // subnav.classList.contains('visible')? subnav.classList.remove('visible') : 
-
-                    // subpage layout changes
-                    if(subnav && subnav.classList.contains('visible')){
-                        subnav.classList.remove('visible');
-                        subnav.classList.add('no-visible');
-                        
-                    }
+                    subnav.classList.remove('visible');
+                    subnav.classList.add('no-visible');
 
                 } else if( width >= 992){
-                    nav.classList.remove('column');
+                    if(nav.classList.contains('column')){
+                        nav.classList.remove('column');
+                    }
 
                     // subpage layout changes
                     if(subnav && subnav.classList.contains('no-visible')){
@@ -176,8 +154,6 @@
                     // subpage layout changes
                     if(subnav.classList.contains('visible')) {
                         subnav.classList.remove('visible');
-
-                    } else {
                         subnav.classList.add('no-visible');
                     }
 

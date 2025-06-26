@@ -189,23 +189,25 @@
             }
         },
         tooSmallScreen: function(){
-            const screenHeight = win.screen.height;
+            let width = win.innerWidth;
 
             win.addEventListener('scroll', () => {
                 const scrollTop = win.scrollY;
                 const viewportHeight = win.innerHeight;
                 const documentHeight = document.documentElement.scrollHeight;
+                const subNav = doc.querySelector('.subpage-nav');
                 
-                if (scrollTop + viewportHeight >= documentHeight - 250) {
-                    const subNav = doc.querySelector('.subpage-nav');
-                    subNav.classList.remove('visible');
-                    subNav.classList.add('no-visible');
-                } else if (scrollTop + viewportHeight < documentHeight) {
-                    const subNav = doc.querySelector('.subpage-nav');
-                    subNav.classList.remove('no-visible');
-                    subNav.classList.add('visible');
+                if(width >= 992){
+                    if (scrollTop + viewportHeight >= documentHeight - 250) {
+                        subNav.classList.remove('visible');
+                        subNav.classList.add('shrink-fade');
+                    } else if (scrollTop + viewportHeight < documentHeight) {
+                        subNav.classList.remove('shrink-fade');
+                        subNav.classList.add('visible');
+                    }
                 }
-                });
+                
+            });
         }
     }
     website.init();

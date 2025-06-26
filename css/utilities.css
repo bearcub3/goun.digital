@@ -242,3 +242,8 @@ small {
     font-size: .8rem;
     margin: 10px 30px;
 }
+
+.shrink-fade {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
