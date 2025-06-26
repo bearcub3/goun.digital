@@ -49,10 +49,16 @@ header > nav > ul {
     margin-right: 0;
 }
 
+.ux-columns {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 35px;
+}
+
 .second-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 35px;
 }
 
 .column-1 {
@@ -60,7 +66,7 @@ header > nav > ul {
 }
 
 .column-2 {
-    grid-column: 2 / 3;
+    grid-column: 2;
 }
 
 footer {
@@ -191,7 +197,7 @@ table ul:last-child {
 dl > div.background-color {
     display: inline-block;
     width: 100%;
-    background-color: rgba(224, 193, 179, 0.3);
+    background-color: rgba(13, 33, 161, 0.1);
     border-radius: 10px;
     padding: 1.2rem;
 }
@@ -397,7 +403,7 @@ ol, ul {
         padding: 0;
     }
     .ux-graph > li {
-        color: #5B8C5A;
+        color: #0D21A1;
         position: relative;
         width: 100%;
         height: 120px;
@@ -415,7 +421,7 @@ ol, ul {
     .ux-graph > li::before {
         content: '';
         display: block;
-        border: 10px solid #5B8C5A;
+        border: 10px solid #0D21A1;
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -428,7 +434,7 @@ ol, ul {
         content: '';
         display: block;
         height: 70%;
-        border: 5px solid #5B8C5A;
+        border: 5px solid #0D21A1;
         position: absolute;
         top: 70px;
         left: 15px;
@@ -470,19 +476,19 @@ ol, ul {
 
     .title-area {
         grid-row: 1;
-        grid-column: 4 / 11;                  
+        grid-column: 5 / 11;                  
     }
     
     .content-area {
         grid-row: 2;
-        grid-column: 4 / 11;
+        grid-column: 5 / 11;
     }
 
     /* Visualization graph */
     .ux-graph > li:not(.no-border):last-child::after{
         content: '';
         display: block;
-        border: 5px solid #5B8C5A;
+        border: 5px solid #0D21A1;
         border-end-start-radius: 5px;
         border-end-end-radius: 5px;
         position: absolute;

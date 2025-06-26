@@ -64,7 +64,7 @@
                     });
                     
                     methodologySection.forEach((col) => {
-                        col.classList.remove('second-column');
+                        col.classList.remove('ux-columns');
                     });
 
                 } else if( width >= 992) {
@@ -87,7 +87,7 @@
                     });
 
                     methodologySection.forEach((col) => {
-                        col.classList.remove('second-column');
+                        col.classList.remove('ux-columns');
                     });
                     
                 } else if( width >= 992){              
@@ -98,7 +98,7 @@
                     });
 
                     methodologySection.forEach((col) => {
-                        col.classList.add('second-column');
+                        col.classList.add('ux-columns');
                     });
                 }
             })

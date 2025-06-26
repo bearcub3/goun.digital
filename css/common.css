@@ -173,6 +173,11 @@ sup small {
     height: 100%;
 }
 
+mark {
+    background-color: #0D21A1;
+    color: #dfdfdf;
+}
+
 @media screen and (min-width: 350px) {
     :root {
         font-size: 16px;
