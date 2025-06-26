@@ -141,10 +141,31 @@
 
             // Sub page navigation
             const subnav = doc.querySelector('.subpage-nav');
-            
-            // sub page layout
-            const titleArea = doc.querySelector('.title-area');
-            const contentArea = doc.querySelector('.content-area');
+
+            win.addEventListener('load', (e) => {
+                let width = win.innerWidth;
+
+                if(width < 992){
+                    nav.classList.add('column');
+                    // subnav.classList.contains('visible')? subnav.classList.remove('visible') : 
+
+                    // subpage layout changes
+                    if(subnav && subnav.classList.contains('visible')){
+                        subnav.classList.remove('visible');
+                        subnav.classList.add('no-visible');
+                        
+                    }
+
+                } else if( width >= 992){
+                    nav.classList.remove('column');
+
+                    // subpage layout changes
+                    if(subnav && subnav.classList.contains('no-visible')){
+                        subnav.classList.remove('no-visible');
+                        subnav.classList.add('visible')
+                    }
+                }
+            });
 
             win.addEventListener('resize', (e) => {
                 let width = win.innerWidth;
@@ -178,29 +199,6 @@
                     }
                 }
             })
-
-            win.addEventListener('load', (e) => {
-                let width = win.innerWidth;
-
-                if (width < 992) {
-                    nav.classList.add('column');
-
-                    // subpage layout changes
-                    if(subnav && subnav.classList.contains('visible')){
-                        subnav.classList.add('no-visible');
-                        subnav.classList.remove('visible');
-                    }
-
-                } else if( width >= 992) {
-                    nav.classList.remove('column');
-
-                    // subpage layout changes
-                    if(subnav && subnav.classList.contains('no-visible')){
-                        subnav.classList.remove('no-visible');
-                        subnav.classList.add('visible')
-                    }
-                }
-            });
         }
     }
     website.init();

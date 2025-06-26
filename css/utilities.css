@@ -19,6 +19,10 @@
     justify-content: space-around;
 }
 
+.space-evenly {
+    justify-content: space-evenly;
+}
+
 .no-style-list {
     list-style: none;
 }
@@ -80,9 +84,9 @@ abbr {
 }
 
 h1, .h1 {
-    font-size: 2.986rem;
-    font-weight: 700;
-    line-height: 1.6;
+    font-size: 2.027rem;
+    font-weight: 600;
+    line-height: 1.4;
     font-style: normal;
     text-align: center;
 }
@@ -90,13 +94,13 @@ h1, .h1 {
 h2, .h2 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 2.488rem;
+    font-size: 1.802rem;
 }
 
 h3, .h3 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.9rem;
+    font-size: 1.602rem;
     font-weight: 700;
 }
 
@@ -107,20 +111,20 @@ h3, .h3 {
 h4, .h4 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.65rem;
+    font-size: 1.424rem;
     font-weight: 500;
 }
 
 h5, .h5 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.4rem;
+    font-size: 1.266rem;
 }
 
 h6, .h6 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     margin-bottom: 0;
 }
 

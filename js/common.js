@@ -59,7 +59,9 @@
                 let width = win.innerWidth;
 
                 if (width < 992) {
+                    nav.classList.add('column');
                     columns.forEach((col) => {
+                        col.classList.remove('visible');
                         col.classList.add('no-visible');
                     });
                     
@@ -70,7 +72,12 @@
                 } else if( width >= 992) {
                     nav.classList.remove('column');
                     columns.forEach((col) => {
+                        col.classList.remove('no-visible');
                         col.classList.add('visible');
+                    });
+
+                    methodologySection.forEach((col) => {
+                        col.classList.add('ux-columns');
                     });
                 }
             });
@@ -183,25 +190,22 @@
         },
         tooSmallScreen: function(){
             const screenHeight = win.screen.height;
-            
-            if(screenHeight <= 800){
-                win.addEventListener('scroll', () => {
-                    const scrollTop = win.scrollY;
-                    const viewportHeight = win.innerHeight;
-                    const documentHeight = document.documentElement.scrollHeight;
-                  
-                    if (scrollTop + viewportHeight >= documentHeight - 250) {
-                        const subNav = doc.querySelector('.subpage-nav');
-                        subNav.classList.remove('visible');
-                        subNav.classList.add('no-visible');
-                    } else if (scrollTop + viewportHeight < documentHeight) {
-                        const subNav = doc.querySelector('.subpage-nav');
-                        subNav.classList.remove('no-visible');
-                        subNav.classList.add('visible');
-                    }
-                  });
-            }
-            
+
+            win.addEventListener('scroll', () => {
+                const scrollTop = win.scrollY;
+                const viewportHeight = win.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+                
+                if (scrollTop + viewportHeight >= documentHeight - 250) {
+                    const subNav = doc.querySelector('.subpage-nav');
+                    subNav.classList.remove('visible');
+                    subNav.classList.add('no-visible');
+                } else if (scrollTop + viewportHeight < documentHeight) {
+                    const subNav = doc.querySelector('.subpage-nav');
+                    subNav.classList.remove('no-visible');
+                    subNav.classList.add('visible');
+                }
+                });
         }
     }
     website.init();

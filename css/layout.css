@@ -276,13 +276,13 @@ ol, ul {
         grid-column: 1 / 4;
     }
 
-    /* main > section {
+    main > section {
         height: 100%;
         padding: 2em 25px;
-    } */
+    }
 
     /* SubPages */
-    /* .subpage {
+    .subpage {
         margin-top: 50px;
         grid-row: 3;
         grid-template-rows: 1fr auto;
