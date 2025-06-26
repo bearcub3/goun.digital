@@ -74,9 +74,9 @@ abbr {
 }
 
 .accent-number {
-    font-size: 4.2rem;
-    font-weight: 700;
-    color: #C37D92;
+    font-size: 7rem;
+    font-weight: 500;
+    color: rgba(13, 33, 161, 1);
 }
 
 .no-lineheight-h5 {
@@ -105,7 +105,7 @@ h3, .h3 {
 }
 
 .h3-heading {
-    color: #324a5f;
+    color: #001f54;
 }
 
 h4, .h4 {

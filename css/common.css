@@ -129,12 +129,12 @@ button {
 }
 
 blockquote {
-    width: 65%;
+    width: 85%;
     font-family: "Montagu Slab", serif;
     font-optical-sizing: auto;
     font-weight: 100;
     text-align: center;
-    color: #55828B;
+    color: rgba(13, 33, 161, 1);
 }
 
 q {
@@ -174,8 +174,8 @@ sup small {
 }
 
 mark {
-    background-color: #0D21A1;
-    color: #dfdfdf;
+    background-color: #EEC643;
+    color: #0D21A1;
 }
 
 @media screen and (min-width: 350px) {

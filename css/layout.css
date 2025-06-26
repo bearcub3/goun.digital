@@ -51,7 +51,7 @@ header > nav > ul {
 
 .ux-columns {
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 40% 1fr;
     gap: 35px;
 }
 
@@ -102,6 +102,7 @@ pre {
 
 figure {
     width: 100%;
+    margin: 0;
 }
 
 figure > img {
@@ -135,8 +136,9 @@ table tr th {
 }
 
 table:not(.trad-table) td {
-    padding: .7rem;
-    vertical-align: text-top;
+    padding: 1rem 1rem 1rem 0;
+    border-top: 1px solid #011638;
+    /* vertical-align: text-top; */
 }
 
 table:not(.trad-table) td:first-child[scope="row"] {
@@ -158,8 +160,10 @@ td > span {
     top: -15px;
 }
 
-tbody > tr:nth-of-type(even) {
-    background-color: rgba(204, 201, 220, 0.3);
+tbody > tr:nth-of-type(even) td {
+    border-top: 1px solid #011638;
+    border-bottom: 1px solid #011638;
+    /* background-color: rgba(204, 201, 220, 0.3); */
 }
 
 
@@ -197,8 +201,10 @@ table ul:last-child {
 dl > div.background-color {
     display: inline-block;
     width: 100%;
-    background-color: rgba(13, 33, 161, 0.1);
-    border-radius: 10px;
+    /* border: 1px solid rgba(13, 33, 161, 1); */
+    background-color: rgba(13, 33, 161, 1);
+    color: #dfdfdf;
+    border-radius: 0;
     padding: 1.2rem;
 }
 
@@ -242,6 +248,16 @@ dl > div.background-color {
 
 ol, ul {
     margin-left: 15px;
+}
+
+.page-para {
+    color: #4d5061;
+    text-align: center;
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: auto;
+    line-height: 1.6;
+    width: 70%;
 }
 
 /* small screen */
@@ -310,16 +326,6 @@ ol, ul {
         color: #001f54;
         margin: 1rem;
     } */
-
-    .page-para {
-        color: #4d5061;
-        text-align: center;
-        font-family: "Rethink Sans", sans-serif;
-        font-optical-sizing: auto;
-        margin: auto;
-        line-height: 1.6;
-        width: 70%;
-    }
 
     figure {
         margin-left: -0.35%;
