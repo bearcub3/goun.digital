@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #dfdfdf;
+    background-color: rgba(254, 252, 251, 1);
     /* background-color: rgba(254, 252, 251, 1); */
     color: #30323D;
     margin: 0;
@@ -70,7 +70,7 @@ header > nav > ul {
 }
 
 footer {
-    background-color: rgba(254, 252, 251, 1);
+    background-color: #dfdfdf;
     grid-area: foot;
     display: grid;
     gap: 0;
@@ -203,7 +203,7 @@ dl > div.background-color {
     width: 100%;
     /* border: 1px solid rgba(13, 33, 161, 1); */
     background-color: #011638;
-    color: #dfdfdf;
+    color: rgba(254, 252, 251, 1);
     border-radius: 0;
     padding: 1.2rem;
 }
