@@ -1,0 +1,45 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+  <url>
+    <loc>https://goun.digital/</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>1.00</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/index.html</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/ux/visualization.htm</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/ux/evaluative.htm</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/frontend/wireframe.htm</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/frontend/library.htm</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://goun.digital/gounshin-cv.pdf</loc>
+    <lastmod>2025-06-27T10:16:12+00:00</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
