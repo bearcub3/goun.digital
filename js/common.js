@@ -190,6 +190,7 @@
         },
         tooSmallScreen: function(){
             let width = win.innerWidth;
+            const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
             win.addEventListener('scroll', () => {
                 const scrollTop = win.scrollY;
@@ -197,7 +198,7 @@
                 const documentHeight = document.documentElement.scrollHeight;
                 const subNav = doc.querySelector('.subpage-nav');
                 
-                if(width >= 992){
+                if(width >= 992 && !isMobile){
                     if (scrollTop + viewportHeight >= documentHeight - 250) {
                         subNav.classList.remove('visible');
                         subNav.classList.add('shrink-fade');

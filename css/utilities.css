@@ -69,15 +69,32 @@ abbr {
     width: 80%;
 }
 
+.w-70 {
+    width: 70%;
+}
+
 .w-50 {
     width: 50%;
 }
 
-.accent-number {
-    font-size: 7rem;
-    font-weight: 500;
-    color: rgba(13, 33, 161, 1);
+.w-30 {
+    width: 30%;
 }
+
+@media screen and (min-width: 350px) {
+    .accent-number {
+        font-size: 5rem;
+        font-weight: 500;
+        color: rgba(13, 33, 161, 1);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .accent-number {
+        font-size: 6rem;
+    }
+}
+
 
 .no-lineheight-h5 {
     line-height: 1.4rem;
@@ -119,6 +136,7 @@ h5, .h5 {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 1.266rem;
+    line-height: 1.3;
 }
 
 h6, .h6 {
@@ -240,10 +258,15 @@ a:hover, a:focus {
 small {
     display:inline-block;
     font-size: .8rem;
-    margin: 10px 30px;
+    margin: 10px;
 }
 
 .shrink-fade {
     opacity: 0;
     transition: all 0.7s ease-in-out;
-  }
+}
+
+.border-right {
+    border-right: 1px solid #30323D;
+}
+
