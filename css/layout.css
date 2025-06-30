@@ -135,6 +135,10 @@ table:not(.trad-table) td {
     border-top: 1px solid #011638;
 }
 
+table:not(.trad-table) tr:last-child td {
+    border-bottom: 1px solid #011638;
+}
+
 table:not(.trad-table) td:not(td:first-child) {
     padding: 1rem;
 }
@@ -145,7 +149,7 @@ table ul:last-child {
 
 /* regular table style */
 .trad-table{
-    font-size: .7rem;
+    font-size: .8rem;
     border-spacing: 0;
 }
 
@@ -164,11 +168,25 @@ table ul:last-child {
 
 .trad-table th {
     width: 14%;
+    padding: .5rem;
+}
+
+.trad-table.map-view th:first-child {
+    width: 1%;
+    text-align: center;
+    padding: .5rem;
 }
 
 .trad-table td {
     width: 14.333%;
     word-break: break-all;
+    padding: .5rem;
+}
+
+.trad-table.map-view td:first-child {
+    width: 1%;
+    text-align: center;
+    padding: .5rem;
 }
 
 dl > div.background-color {
@@ -301,6 +319,7 @@ ol, ul {
     } */
 
     figure {
+        width: 80%;
         margin-left: -0.35%;
     }
 
