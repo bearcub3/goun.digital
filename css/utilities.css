@@ -23,6 +23,10 @@
     justify-content: space-evenly;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .no-style-list {
     list-style: none;
 }

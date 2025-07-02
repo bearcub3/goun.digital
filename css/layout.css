@@ -387,15 +387,21 @@ ol, ul {
     .logo {
         grid-row: 1;
     }
-
+    
     nav {
-        grid-column: 5 / 10;
+        grid-column: 4 / 10;
         grid-row: 1;
     }
-    
-    nav > ul li {
-        width: 300px;;
+
+    nav > ul:is(.flex-container) > li:first-child {
+        width: 220px;
     }
+
+    nav > ul:is(.flex-container) > li:nth-child(3),
+    nav > ul:is(.flex-container) > li:nth-child(4) {
+        text-align: center;
+    }
+    
 
     main {
         grid-column: 2 / 9;
@@ -521,6 +527,18 @@ ol, ul {
     nav {
         grid-column: 6 / 12;
         margin: 0;
+    }
+    nav > ul:is(.flex-container) > li:first-child {
+        width: 250px;
+    }
+
+    nav > ul:is(.flex-container) > li {
+        min-width: 200px;
+    }
+
+    nav > ul:is(.flex-container) > li:nth-child(3),
+    nav > ul:is(.flex-container) > li:nth-child(4) {
+        text-align: center;
     }
 
     main {
