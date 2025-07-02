@@ -12,11 +12,11 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('click', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
-                    if (submenu && submenu.classList.contains('no-visible')){
+                    if (!!submenu && submenu.classList.contains('no-visible')){
                         submenu.classList.remove('no-visible');
                         submenu.classList.add('visible');
                     }
@@ -26,11 +26,11 @@
 
             menus.forEach((menu, i) => {
                 menu.addEventListener('focus', (e) => {
-                    e.preventDefault();
+                    //e.preventDefault();
 
                     const submenu = menu.nextElementSibling;
 
-                    if (submenu && submenu.classList.contains('no-visible')){
+                    if (!!submenu && submenu.classList.contains('no-visible')){
                         submenu.classList.remove('no-visible');
                         submenu.classList.add('visible');
                     }                   
@@ -71,6 +71,7 @@
                     const parent = el.parentElement.parentElement;
 
                     if(parent && parent.classList.contains('no-visible')){
+                        console.log(parent);
                         parent.classList.remove('no-visible');
                         parent.classList.add('visible');
                         parent.classList.add('selected');
@@ -127,7 +128,7 @@
             win.addEventListener('load', (e) => {
                 let width = win.innerWidth;
 
-                if(width < 992){
+                if(width < 992 && !!subnav){
                     nav.classList.add('column');
                     subnav.classList.remove('visible');
                     subnav.classList.add('no-visible');
@@ -148,7 +149,7 @@
             win.addEventListener('resize', (e) => {
                 let width = win.innerWidth;
 
-                if(width < 992){
+                if(width < 992 && !!subnav){
                     nav.classList.add('column');
                     
                     // subpage layout changes
